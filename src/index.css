@@ -2,7 +2,7 @@
   margin: 0;
   font-family: "Hind", system-ui, -apple-system, "Segoe UI", sans-serif;
   color: #1f1a1d;
-  background: #fff7f3;
+  background: #ffffff;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -29,6 +29,51 @@ h4 {
 p {
   margin: 0 0 12px 0;
   color: #4b3e45;
+}
+
+.hero {
+  min-height: 500px;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  align-items: center;
+
+}
+
+.hero-inner {
+  width: min(900px, 100%);
+}
+
+.hero-text {
+  font-size: 1.5rem;
+
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  color: #C599B6;
+}
+
+.hero-profile-pic {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  display: block;
+}
+
+.hero-bio {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.hero-arrow {
+  text-align: center;
+  padding-top: 2rem;
+
+}
+
+.hero-arrow-img {
+  height: 3rem;
 }
 
 main {

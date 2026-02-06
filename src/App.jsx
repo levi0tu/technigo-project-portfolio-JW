@@ -1,15 +1,20 @@
 import data from "./data.json"
-import { Project } from "./Project"
+import { Hero } from "./Hero"
+import { Tech } from "./Tech"
+import { FeaturedProjects } from "./FeaturedProjects"
+import { Words } from "./Words"
+import { Skills } from "./Skills"
+import { Contact } from "./Contact"
 
 export const App = () => {
   return (
     <main>
-      <h1>My Portfolio</h1>
-      <section className="projects">
-        {data.projects.map((project) => (
-          <Project key={project.name} project={project} />
-        ))}
-      </section>
+      <Hero />
+      <Tech />
+      <FeaturedProjects projects={data.projects} />
+      <Words />
+      <Skills />
+      <Contact />
     </main >
   )
 }
