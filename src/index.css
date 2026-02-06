@@ -1,21 +1,40 @@
-:root {
+﻿:root {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: "Hind", system-ui, -apple-system, "Segoe UI", sans-serif;
+  color: #1f1a1d;
+  background: #fff7f3;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+@import url("https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600&family=Montserrat:wght@500;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Montserrat", "Hind", system-ui, sans-serif;
+  margin: 0 0 12px 0;
+  color: #1f1a1d;
+}
+
+p {
+  margin: 0 0 12px 0;
+  color: #4b3e45;
 }
 
 main {
-  max-width: 900px;
+  max-width: 1100px;
   margin: 0 auto;
-  padding: 32px;
+  padding: 48px 24px 80px;
 }
 
 .projects {
@@ -24,20 +43,76 @@ main {
 }
 
 .project {
-  border: 1px solid #ddd;
-  padding: 16px;
-  border-radius: 8px;
+  background: white;
+  border: 1px solid rgba(197, 153, 182, 0.25);
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 6px 20px rgba(197, 153, 182, 0.12);
+}
+
+.project img {
+  width: 100%;
+  display: block;
+  border-radius: 12px;
+  margin: 12px 0;
+  background: #fff7f3;
 }
 
 .tags {
   display: flex;
+  flex-wrap: wrap;
   gap: 8px;
   list-style: none;
   padding: 0;
+  margin: 12px 0 0 0;
+}
+
+.tags li {
+  background: black;
+  color: white;
+  padding: 6px 10px;
+  font-size: 0.85rem;
 }
 
 .links {
   display: flex;
-  gap: 12px;
-  margin-top: 12px;
+  gap: 1rem;
+  margin-top: 14px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 8px 14px;
+  border-radius: 1rem;
+  font-family: "Montserrat", "Hind", system-ui, sans-serif;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: none;
+  border: 1px solid transparent;
+  transition: transform 120ms ease, box-shadow 120ms ease, background 120ms ease;
+}
+
+.btn-live {
+  background: #fff7f3;
+  color: #1f1a1d;
+}
+
+.btn-live:hover {
+  background: #e6b2ba;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 14px rgba(197, 153, 182, 0.25);
+}
+
+.btn-view {
+  background: #fff7f3;
+  color: #1f1a1d;
+}
+
+.btn-view:hover {
+  background: #fad0c4;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 14px rgba(197, 153, 182, 0.25);
 }
