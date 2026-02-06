@@ -1,6 +1,6 @@
 export const Tech = () => (
     <section className="tech">
         <h1>Tech</h1>
-        <p>HTML, CSS, JavaScript, React, APIs, Git, Node, etc.</p>
+        <p>HTML, CSS, Flexbox, JavaScript, ES6, JSX, React, Web Accessibility, APIs, GitHub. </p>
     </section>
 )
