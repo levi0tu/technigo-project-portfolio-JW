@@ -22,8 +22,8 @@ h2,
 h3,
 h4 {
   font-family: "Montserrat", "Hind", system-ui, sans-serif;
-  margin: 0 0 12px 0;
-  color: #1f1a1d;
+  margin: 0;
+  color: #000000;
 }
 
 p {
@@ -33,32 +33,37 @@ p {
 
 /*Hero styling*/
 .hero {
-  min-height: 500px;
+  min-height: 700px;
   display: grid;
   grid-template-rows: 1fr auto;
   align-items: center;
-
+  justify-items: center;
 }
 
 .hero-inner {
-  width: min(900px, 100%);
+  width: 1044px;
+  height: 313px;
 }
 
 .hero-text {
-  font-size: 1.5rem;
-
+  font-size: 2rem;
+  font-weight: bold;
 }
 
 .hero h1 {
-  font-size: 2.5rem;
+  font-size: 5rem;
   color: #C599B6;
 }
 
 .hero-profile-pic {
-  width: 150px;
-  height: 150px;
+  width: 160px;
+  height: 160px;
   object-fit: cover;
   display: block;
+}
+
+.hero-presentation {
+  font-size: 1.2rem;
 }
 
 .hero-bio {
@@ -81,50 +86,90 @@ p {
 
 /*Tech styling*/
 .tech {
-  min-height: 500px;
+  min-height: 600px;
   background-color: #C599B6;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 4rem;
+}
+
+.tech-frame {
+  width: 1044px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4rem
 }
 
 .tech h1 {
   color: #fff7f3;
-  font-size: 2.5rem;
+  font-size: 5rem;
 }
 
 .tech p {
   color: #ffffff;
-  font-size: 1.2rem;
+  font-size: 2rem;
 }
 
-main {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 48px 24px 80px;
+/*End of tech styling*/
+
+/*Featured projects styling*/
+.featured {
+  display: grid;
+  grid-template-rows: 1fr auto;
+  align-items: center;
+  justify-items: center;
 }
 
+.featured-inner {
+  width: 1044px;
+  padding-top: 5rem;
+}
+
+.featured-title {
+  text-align: left;
+}
+
+.featured h1 {
+  font-size: 5rem;
+  color: #C599B6;
+  padding-bottom: 5rem;
+}
+
+/*End of featured projects styling*/
+
+/*Project cards styling*/
 .projects {
   display: grid;
   gap: 24px;
 }
 
 .project {
-  background: white;
-  border: 1px solid rgba(197, 153, 182, 0.25);
-  padding: 20px;
-  border-radius: 14px;
-  box-shadow: 0 6px 20px rgba(197, 153, 182, 0.12);
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  gap: 3rem;
+  align-items: stretch;
+  width: 1044px;
+
 }
 
 .project img {
-  width: 100%;
+  object-fit: cover;
   display: block;
-  border-radius: 12px;
-  margin: 12px 0;
-  background: #fff7f3;
+  border-left: 0.8rem solid #c599b6;
+  border-bottom: 0.8rem solid #c599b6;
+
+}
+
+.project-img-wrap {
+  height: 100%;
+}
+
+.project-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 .tags {
@@ -185,3 +230,5 @@ main {
   transform: translateY(-1px);
   box-shadow: 0 6px 14px rgba(197, 153, 182, 0.25);
 }
+
+/*End of project cards styling*/

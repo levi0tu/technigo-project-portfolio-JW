@@ -1,31 +1,36 @@
 {
   "projects": [
     {
-      "name": "News site",
-      "image": "",
+      "name": "Business Site",
+      "description": "A business one pager with a hero video. The page includes a signup form with text fields and radio buttons.\nTechnical implementation: HTML, CSS, responsive design with clear structure.",
+      "image": "./business-site.jpg",
       "tags": [
-        "HTML5",
-        "CSS3"
+        "HTML",
+        "CSS"
       ],
       "netlify": "https://project-news-site-jeanette-w.pages.dev/",
       "github": "https://github.com/levi0tu/project-news-site-Jeanette-W"
     },
     {
-      "name": "Business site",
-      "image": "",
+      "name": "News Site",
+      "description": "News ",
+      "image": "./news-site.jpg",
       "tags": [
-        "HTML5",
-        "CSS3"
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "APIs"
       ],
       "netlify": "https://gentle-palmier-7b7edd.netlify.app/",
       "github": "https://github.com/levi0tu/technigo-project-business-site-JW"
     },
     {
       "name": "Pizzabot",
+      "description": "An interactive pizza ordering system. Javascript, variables.",
       "image": "",
       "tags": [
-        "HTML5",
-        "CSS3",
+        "HTML",
+        "CSS",
         "JavaScript"
       ],
       "netlify": "https://pizzabot-j.netlify.app/",
@@ -33,10 +38,11 @@
     },
     {
       "name": "Library",
-      "image": "",
+      "description": "A digital library with a collection of books. Using array and objects to store the data.",
+      "image": "./library.jpg",
       "tags": [
-        "HTML5",
-        "CSS3",
+        "HTML",
+        "CSS",
         "JavaScript"
       ],
       "netlify": "https://biblioteket.netlify.app",
@@ -44,6 +50,7 @@
     },
     {
       "name": "Weather app",
+      "description": "A weather app displaying current weather conditions as well as a 5 day forecast. The project introduced the knowledge of working with API.",
       "image": "",
       "tags": [
         "HTML5",
