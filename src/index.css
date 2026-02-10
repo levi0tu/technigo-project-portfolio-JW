@@ -18,8 +18,18 @@ body {
 }
 
 h1,
-h2,
-h3,
+h2 {
+  color: #ffffff;
+  font-size: 5rem;
+}
+
+
+h3 {
+  color: #ffffff;
+  font-size: 2rem;
+}
+
+
 h4 {
   font-family: "Montserrat", "Hind", system-ui, sans-serif;
   margin: 0;
@@ -51,7 +61,6 @@ p {
 }
 
 .hero h1 {
-  font-size: 5rem;
   color: #C599B6;
 }
 
@@ -102,11 +111,6 @@ p {
   gap: 4rem
 }
 
-.tech h1 {
-  color: #fff7f3;
-  font-size: 5rem;
-}
-
 .tech p {
   color: #ffffff;
   font-size: 2rem;
@@ -124,17 +128,17 @@ p {
 
 .featured-inner {
   width: 1044px;
-  padding-top: 5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .featured-title {
   text-align: left;
 }
 
-.featured h1 {
+.featured h2 {
   font-size: 5rem;
   color: #C599B6;
-  padding-bottom: 5rem;
 }
 
 /*End of featured projects styling*/
@@ -142,7 +146,7 @@ p {
 /*Project cards styling*/
 .projects {
   display: grid;
-  gap: 24px;
+  gap: 2rem;
 }
 
 .project {
@@ -232,3 +236,57 @@ p {
 }
 
 /*End of project cards styling*/
+
+/*Skills styling*/
+.skills {
+  min-height: 600px;
+  background-color: #C599B6;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.skills-box {
+  width: 1044px;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem
+}
+
+.skills-title {
+  color: white;
+  font-size: 5rem;
+  text-align: left;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+}
+
+.skills-grid>div:nth-child(1) h3 {
+  background-color: #EB5577;
+}
+
+.skills-grid>div:nth-child(2) h3 {
+  background-color: #2483E0;
+}
+
+.skills-grid>div:nth-child(3) h3 {
+  background-color: #6DB486;
+}
+
+.skills-grid h3 {
+  display: inline-block;
+}
+
+.skills h3 {
+  color: #ffffff;
+  font-size: 2rem;
+}
+
+.skills li {
+  color: white;
+}

@@ -5,7 +5,7 @@ export const FeaturedProjects = ({ projects }) => {
         <section className="featured">
             <div className="featured-inner">
                 <div className="featured-title">
-                    <h1>Featured Projects</h1>
+                    <h2>Featured Projects</h2>
                 </div>
                 <div className="projects">
                     {projects.map((project) => (
