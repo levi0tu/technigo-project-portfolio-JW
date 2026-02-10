@@ -1,7 +1,7 @@
 ﻿:root {
   margin: 0;
   font-family: "Hind", system-ui, -apple-system, "Segoe UI", sans-serif;
-  color: #1f1a1d;
+  color: #000000;
   background: #ffffff;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -19,13 +19,12 @@ body {
 
 h1,
 h2 {
-  color: #ffffff;
+  color: #09637E;
   font-size: 5rem;
 }
 
 
 h3 {
-  color: #ffffff;
   font-size: 2rem;
 }
 
@@ -61,7 +60,7 @@ p {
 }
 
 .hero h1 {
-  color: #C599B6;
+  color: #09637E;
 }
 
 .hero-profile-pic {
@@ -96,7 +95,7 @@ p {
 /*Tech styling*/
 .tech {
   min-height: 600px;
-  background-color: #C599B6;
+  background-color: #09637E;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -109,6 +108,10 @@ p {
   flex-direction: row;
   align-items: center;
   gap: 4rem
+}
+
+.tech h2 {
+  color: white
 }
 
 .tech p {
@@ -136,11 +139,6 @@ p {
   text-align: left;
 }
 
-.featured h2 {
-  font-size: 5rem;
-  color: #C599B6;
-}
-
 /*End of featured projects styling*/
 
 /*Project cards styling*/
@@ -158,22 +156,18 @@ p {
 
 }
 
-.project img {
+.project-img {
   object-fit: cover;
+  height: 100%;
+  width: 100%;
   display: block;
-  border-left: 0.8rem solid #c599b6;
-  border-bottom: 0.8rem solid #c599b6;
+  border-left: 0.8rem solid #09637E;
+  border-bottom: 0.8rem solid #09637E;
 
 }
 
 .project-img-wrap {
   height: 100%;
-}
-
-.project-img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
 }
 
 .tags {
@@ -204,7 +198,7 @@ p {
   align-items: center;
   gap: 0.5rem;
   padding: 8px 14px;
-  border-radius: 1rem;
+  border-radius: 1.2rem;
   font-family: "Montserrat", "Hind", system-ui, sans-serif;
   font-weight: 600;
   font-size: 0.9rem;
@@ -214,25 +208,24 @@ p {
 }
 
 .btn-live {
-  background: #fff7f3;
-  color: #1f1a1d;
+  background: #EBF4F6;
+  color: #333333;
+
 }
 
 .btn-live:hover {
-  background: #e6b2ba;
-  transform: translateY(-1px);
-  box-shadow: 0 6px 14px rgba(197, 153, 182, 0.25);
+  background: #09637E;
+  color: white;
 }
 
 .btn-view {
-  background: #fff7f3;
-  color: #1f1a1d;
+  background: #EBF4F6;
+  color: #333333;
 }
 
 .btn-view:hover {
-  background: #fad0c4;
-  transform: translateY(-1px);
-  box-shadow: 0 6px 14px rgba(197, 153, 182, 0.25);
+  background: #7AB2B2;
+
 }
 
 /*End of project cards styling*/
@@ -240,7 +233,7 @@ p {
 /*Skills styling*/
 .skills {
   min-height: 600px;
-  background-color: #C599B6;
+  background-color: #09637E;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -254,7 +247,7 @@ p {
   gap: 4rem
 }
 
-.skills-title {
+.skills-title h2 {
   color: white;
   font-size: 5rem;
   text-align: left;
@@ -289,4 +282,31 @@ p {
 
 .skills li {
   color: white;
+}
+
+/*End of skills styling*/
+
+/*Contact styling*/
+.contact {
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.contact-grid {
+  width: 1044px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-title h2 {
+  color: #09637E;
+}
+
+.contact-name {
+  font-size: 2rem;
+  font-weight: bold;
 }
