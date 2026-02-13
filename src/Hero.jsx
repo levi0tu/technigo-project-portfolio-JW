@@ -1,14 +1,17 @@
 export const Hero = () => (
     <section className="hero">
         <div className="hero-inner">
-            <img className="hero-profile-pic" src="/profile_round.png" alt="Jeanette Wiktorsson" />
+            <div className="hero-img-container">
+                <img className="hero-profile-pic" src="/profile_round.png" alt="Jeanette Wiktorsson" />
+            </div>
+            <div className="hero-content">
+                <p className="hero-intro">I am Jeanette Wiktorsson</p>
+                <h1>Frontend Developer</h1>
 
-            <p className="hero-intro">I am Jeanette Wiktorsson</p>
-            <h1>Frontend Developer</h1>
-
-            <p className="hero-presentation">I am a frontend developer with a background as a PLM Engineer. With +15 years of experience in engineering, method development and design, I am now focusing on building modern, user-friendly web interfaces. I´m currently developing my skills with HTML, CSS, JavaScript, React and modern workflows to turn ideas into clean, responsive UI.</p>
-
-            <img className="hero-arrow" aria-hidden="true" src="/public/arrow.svg" alt="down arrow" />
+                <p className="hero-presentation">I am a frontend developer with a background as a PLM Engineer. With +15 years of experience in engineering, method development and design, I am now focusing on building modern, user-friendly web interfaces. I´m currently developing my skills with HTML, CSS, JavaScript, React and modern workflows to turn ideas into clean, responsive UI.</p>
+            </div>
         </div>
+        <img className="hero-arrow" aria-hidden="true" src="/public/arrow.svg" alt="down arrow" />
+
     </section>
 )

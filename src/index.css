@@ -10,15 +10,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600&family=Montserrat:wght@500;600;700&display=swap");
 
 * {
-  outline: 1px solid red;
-}
-
-* {
   box-sizing: border-box;
 }
 
 body {
-  margin: 1rem;
+  margin: 0;
 }
 
 h1,
@@ -30,29 +26,46 @@ h2 {
 
 h3 {
   font-size: 2rem;
-  margin: 0 0 1rem 0;
 }
 
 
 h4 {
   font-family: "Montserrat", "Hind", system-ui, sans-serif;
-  margin: 0;
   color: #000000;
 }
 
 p {
   font-size: 1.2rem;
-  margin: 0 0 12px 0;
   color: #4b3e45;
 }
 
-/*Hero styling*/
-.hero-inner {
-  display: grid;
-  grid-template-rows: 1fr auto;
-  align-items: center;
-  justify-items: center;
+.hero,
+.tech,
+.featured,
+.skills,
+.contact {
+  width: 100%;
+  margin-inline: auto;
 }
+
+/*Hero styling*/
+.hero {
+  padding-top:
+    4rem;
+}
+
+.hero-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-profile-pic {
+  width: 120px;
+  height: 120px;
+}
+
 
 .hero-intro {
   font-size: 1rem;
@@ -63,13 +76,6 @@ p {
   color: #09637E;
 }
 
-.hero-profile-pic {
-  width: 160px;
-  height: 160px;
-  object-fit: cover;
-  display: block;
-}
-
 .hero-bio {
   display: flex;
   align-items: center;
@@ -77,13 +83,9 @@ p {
 }
 
 .hero-arrow {
-  text-align: center;
-  padding-top: 2rem;
-
-}
-
-.hero-arrow-img {
-  height: 2rem;
+  display: block;
+  margin-inline: auto;
+  padding: 1rem;
 }
 
 /*End of hero styling*/
@@ -91,17 +93,14 @@ p {
 /*Tech styling*/
 .tech {
   background-color: #09637E;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
 }
 
 .tech-inner {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
-  gap: 2rem
+  justify-content: center;
+  gap: 1rem;
 }
 
 .tech h2 {
@@ -111,6 +110,7 @@ p {
 .tech p {
   color: #ffffff;
   font-size: 1rem;
+  text-align: center;
 }
 
 /*End of tech styling*/
@@ -310,3 +310,88 @@ p {
 }
 
 /*End of contact styling*/
+
+/*Tablet and desktop */
+@media (min-width: 768px) {
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  .hero-inner,
+  .tech-inner,
+  .featured-inner,
+  .skills-inner,
+  .contact-grid {
+    width: 90%;
+    margin-inline: auto;
+  }
+
+  .hero-inner {
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .tech {
+    padding: 2rem 0 2rem 0;
+  }
+
+  .projects {
+    gap: 2rem;
+  }
+
+  .project {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    align-items: start;
+  }
+
+  .project-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+
+}
+
+/* Laptop*/
+@media (min-width: 1024px) {
+  h2 {
+    font-size: 4rem;
+  }
+
+  h3 {
+    font-size: 2.5rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+  }
+
+  .hero-inner,
+  .tech-inner,
+  .featured-inner,
+  .skills-inner,
+  .contact-grid {
+    width: 80%;
+    margin-inline: auto;
+  }
+
+  .hero-profile-pic {
+    width: 160px;
+    height: 160px;
+  }
+
+  .tech {
+    background-color: #09637E;
+    flex-direction: row;
+  }
+
+  .tech-inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    gap: 2rem;
+  }
+}
