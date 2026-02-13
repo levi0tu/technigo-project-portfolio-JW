@@ -6,7 +6,7 @@ export const Contact = () => (
         <div className="contact-grid">
             <img className="hero-profile-pic" src="./profile_round.png" alt="Profile picture" />
             <p className="contact-name">Jeanette Wiktorsson</p>
-            <p className="contact-name">Mail: jeanette.wiktorsson@gmail.com</p>
+            <p className="contact-email"> jeanette.wiktorsson@gmail.com</p>
 
         </div>
     </section>

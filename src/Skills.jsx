@@ -1,6 +1,6 @@
 export const Skills = () => (
     <section className="skills">
-        <div className="skills-box">
+        <div className="skills-inner">
             <div className="skills-title">
                 <h2>Skills</h2>
             </div>

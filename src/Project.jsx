@@ -6,7 +6,7 @@
             <img className="project-img" src={image} alt={`${name} screenshot`} />
             <div className="project-content">
                 <h3>{name}</h3>
-                <p className="project-desc">{description}</p>
+                <p>{description}</p>
                 <ul className="tags">
                     {tags.map((tag) => (
                         <li key={tag}>{tag}</li>

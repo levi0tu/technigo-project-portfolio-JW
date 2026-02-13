@@ -10,22 +10,27 @@
 @import url("https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600&family=Montserrat:wght@500;600;700&display=swap");
 
 * {
+  outline: 1px solid red;
+}
+
+* {
   box-sizing: border-box;
 }
 
 body {
-  margin: 0;
+  margin: 1rem;
 }
 
 h1,
 h2 {
   color: #09637E;
-  font-size: 5rem;
+  font-size: 2rem;
 }
 
 
 h3 {
   font-size: 2rem;
+  margin: 0 0 1rem 0;
 }
 
 
@@ -36,26 +41,21 @@ h4 {
 }
 
 p {
+  font-size: 1.2rem;
   margin: 0 0 12px 0;
   color: #4b3e45;
 }
 
 /*Hero styling*/
-.hero {
-  min-height: 700px;
+.hero-inner {
   display: grid;
   grid-template-rows: 1fr auto;
   align-items: center;
   justify-items: center;
 }
 
-.hero-inner {
-  width: 1044px;
-  height: 313px;
-}
-
-.hero-text {
-  font-size: 2rem;
+.hero-intro {
+  font-size: 1rem;
   font-weight: bold;
 }
 
@@ -68,10 +68,6 @@ p {
   height: 160px;
   object-fit: cover;
   display: block;
-}
-
-.hero-presentation {
-  font-size: 1.2rem;
 }
 
 .hero-bio {
@@ -87,14 +83,13 @@ p {
 }
 
 .hero-arrow-img {
-  height: 3rem;
+  height: 2rem;
 }
 
 /*End of hero styling*/
 
 /*Tech styling*/
 .tech {
-  min-height: 600px;
   background-color: #09637E;
   display: flex;
   flex-direction: row;
@@ -102,12 +97,11 @@ p {
   justify-content: center;
 }
 
-.tech-frame {
-  width: 1044px;
+.tech-inner {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 4rem
+  gap: 2rem
 }
 
 .tech h2 {
@@ -116,21 +110,19 @@ p {
 
 .tech p {
   color: #ffffff;
-  font-size: 2rem;
+  font-size: 1rem;
 }
 
 /*End of tech styling*/
 
 /*Featured projects styling*/
 .featured {
-  display: grid;
-  grid-template-rows: 1fr auto;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-items: center;
 }
 
 .featured-inner {
-  width: 1044px;
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
@@ -143,17 +135,16 @@ p {
 
 /*Project cards styling*/
 .projects {
-  display: grid;
-  gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .project {
   display: grid;
-  grid-template-columns: 250px 1fr;
-  gap: 3rem;
-  align-items: stretch;
-  width: 1044px;
-
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  width: 100%;
 }
 
 .project-img {
@@ -173,23 +164,23 @@ p {
 .tags {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 0.5rem;
   list-style: none;
   padding: 0;
-  margin: 12px 0 0 0;
+  margin: 1rem 0 0 0;
 }
 
 .tags li {
   background: black;
   color: white;
-  padding: 6px 10px;
+  padding: 0.1rem 1rem;
   font-size: 0.85rem;
 }
 
 .links {
   display: flex;
   gap: 1rem;
-  margin-top: 14px;
+  margin-top: 1rem;
   flex-wrap: wrap;
 }
 
@@ -197,7 +188,7 @@ p {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  padding: 8px 14px;
+  padding: 0.5rem 1rem;
   border-radius: 1.2rem;
   font-family: "Montserrat", "Hind", system-ui, sans-serif;
   font-weight: 600;
@@ -240,23 +231,22 @@ p {
   justify-content: center;
 }
 
-.skills-box {
-  width: 1044px;
+.skills-inner {
   display: flex;
   flex-direction: column;
-  gap: 4rem
+  gap: 2rem
 }
 
 .skills-title h2 {
   color: white;
-  font-size: 5rem;
-  text-align: left;
+  text-align: center;
 }
 
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 2rem;
+  justify-items: space-between;
+  text-align: center;
 }
 
 .skills-grid>div:nth-child(1) h3 {
@@ -275,6 +265,11 @@ p {
   display: inline-block;
 }
 
+.skills-grid ul {
+  list-style: none;
+  padding: 0;
+}
+
 .skills h3 {
   color: #ffffff;
   font-size: 2rem;
@@ -288,7 +283,6 @@ p {
 
 /*Contact styling*/
 .contact {
-  min-height: 600px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -296,10 +290,10 @@ p {
 }
 
 .contact-grid {
-  width: 1044px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 1rem
 }
 
 .contact-title h2 {
@@ -307,6 +301,12 @@ p {
 }
 
 .contact-name {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: bold;
 }
+
+.contact-email {
+  font-size: 1rem;
+}
+
+/*End of contact styling*/
