@@ -7,8 +7,6 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600&family=Montserrat:wght@500;600;700&display=swap");
-
 * {
   box-sizing: border-box;
 }
@@ -28,24 +26,9 @@ h3 {
   font-size: 2rem;
 }
 
-
-h4 {
-  font-family: "Montserrat", "Hind", system-ui, sans-serif;
-  color: #000000;
-}
-
 p {
   font-size: 1.2rem;
   color: #4b3e45;
-}
-
-.hero,
-.tech,
-.featured,
-.skills,
-.contact {
-  width: 100%;
-  margin-inline: auto;
 }
 
 /*Hero styling*/
@@ -70,16 +53,6 @@ p {
 .hero-intro {
   font-size: 1rem;
   font-weight: bold;
-}
-
-.hero h1 {
-  color: #09637E;
-}
-
-.hero-bio {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
 }
 
 .hero-arrow {
@@ -155,10 +128,6 @@ p {
   border-left: 0.8rem solid #09637E;
   border-bottom: 0.8rem solid #09637E;
 
-}
-
-.project-img-wrap {
-  height: 100%;
 }
 
 .tags {
@@ -245,7 +214,6 @@ p {
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  justify-items: space-between;
   text-align: center;
 }
 
@@ -341,7 +309,6 @@ p {
   }
 
   .project {
-    display: grid;
     grid-template-columns: 2fr 3fr;
     align-items: start;
   }
@@ -383,15 +350,9 @@ p {
     height: 160px;
   }
 
-  .tech {
-    background-color: #09637E;
-    flex-direction: row;
-  }
-
   .tech-inner {
-    display: flex;
     flex-direction: row;
-    justify-content: left;
+    justify-content: flex-start;
     gap: 2rem;
   }
 }
