@@ -33,8 +33,7 @@ p {
 
 /*Hero styling*/
 .hero {
-  padding-top:
-    4rem;
+  padding-top: 4rem;
 }
 
 .hero-inner {
@@ -49,10 +48,13 @@ p {
   height: 120px;
 }
 
-
 .hero-intro {
   font-size: 1rem;
   font-weight: bold;
+}
+
+.hero-presentation {
+  text-align: left;
 }
 
 .hero-arrow {
@@ -295,9 +297,21 @@ p {
   }
 
   .hero-inner {
+    flex-direction: column;
+    align-items: stretch;
+    text-align: left;
+  }
+
+  .hero-top {
+    text-align: left;
+  }
+
+  .hero-content {
+    display: flex;
     flex-direction: row;
     align-items: flex-start;
     text-align: left;
+    gap: 1rem;
   }
 
   .tech {
